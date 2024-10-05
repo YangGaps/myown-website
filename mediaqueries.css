@@ -1,0 +1,360 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+
+section {
+    width: 100%;
+    min-height: 100vh; 
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+
+    header {
+        padding: 20px 5%;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+
+    .menu {
+        display: block;
+        cursor: pointer;
+        position: absolute;
+        right: 5%; 
+        top: 20px;
+    }
+   
+    .navbar {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px; 
+        right: 5%; 
+        background-color: rgba(0, 0, 0, 0.8); 
+        padding: 15px;
+        border-radius: 8px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        z-index: 999; 
+    }
+
+    .navbar.active {
+        display: flex;
+    }
+
+    .navbar a {
+        font-size: 18px;
+        margin: 10px 0;
+        text-align: right; 
+        color: white;
+        padding: 10px 20px;
+        border-bottom: 1px solid lightpink; 
+        transition: background-color 0.3s ease;
+    }
+   
+    .navbar a:hover {
+        background-color: lightpink;
+        color: black;
+    }
+
+    .menu box-icon {
+        font-size: 30px;
+    }
+    .navbar a {
+        font-size: 14px;
+        margin: 5px 0;
+    }
+
+    .home {
+        display: flex;
+        flex-direction: column; 
+        gap: 1em; 
+        text-align: center;
+        justify-content: center;
+    }
+
+    .img-box {
+        order: -1;
+        margin-top: 50px; 
+    }
+
+    .img-box img {
+        width: 200px; 
+        height: 200px; 
+        max-width: 100%; 
+        border-radius: 50%;
+       
+    }
+
+    .home-content h1 {
+        font-size: 28px; 
+    }
+
+    .home-content p {
+        font-size: 14px;
+        margin-bottom: 0px;
+    }
+
+    .Personal-data {
+        flex-direction: column;
+        align-items: center; 
+        gap: 0.5em; 
+        justify-content: center;
+        
+    }
+
+    .Personal-content h2 {
+        font-size: 26px; 
+        text-align: center; 
+    }
+
+    .Personal-img img {
+        max-width: 250px;
+    }
+
+    .Personal-content {
+        max-width: 100%; 
+        text-align: center; 
+    }
+
+    .Personal-content p {
+        font-size: 14px;
+    }
+
+    .Education {
+        flex-direction: column;
+        padding: 50px 5%;
+        gap: 2em;
+        justify-content: center;
+    }
+
+    .Education h2 {
+        font-size: 26px; 
+        margin: 20px auto 10px auto; 
+    }
+
+    .Educ-head {
+        font-size: 26px; 
+        margin: 20px 0 10px 0; 
+    }
+
+    .educ-container {
+        flex-direction: column; 
+        align-items: center; 
+       
+    }
+
+    .educ-1, .educ-2, .educ-3 {
+        flex: 1 1 90%; 
+        margin: 10px 0; 
+        max-width: 100%;
+    }
+
+    .hobbies {
+        flex-direction: column;
+        padding: 50px 5%;
+        justify-content: center;
+    }
+
+    .fav-movies, .fav-songs {
+        padding: 50px 5%;
+        justify-self: center;
+    }
+
+    .movie, .song-container {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .movie-vid iframe {
+        width: 100%;
+        height: auto;
+    }
+
+    .fav-songs h2{
+        font-size: 26px; 
+        text-align: center;
+    }
+
+    .song-container{
+        justify-content: center;
+    }
+
+    audio {
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 1349px) {
+    header {
+        padding: 25px 8%;
+    }
+
+    .logo {
+        font-size: 22px;
+    }
+    .menu {
+        display: block;
+        cursor: pointer;
+    }
+
+    .navbar {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%; 
+        right: 5%; 
+        background-color: rgba(0, 0, 0, 0.8); 
+        padding: 15px;
+        border-radius: 8px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .navbar.active {
+        display: flex;
+    }
+
+    .navbar a {
+        font-size: 18px;
+        margin: 10px 0;
+        text-align: right; 
+        color: white;
+        padding: 10px 20px;
+        border-bottom: 1px solid lightpink; 
+        transition: background-color 0.3s ease;
+    }
+
+    .navbar a:hover {
+        background-color: lightpink;
+        color: black;
+    }
+
+    .menu box-icon {
+        font-size: 30px;
+    }
+    .navbar a {
+        font-size: 16px;
+    }
+
+    .home {
+        display: flex;
+        flex-direction: column; 
+        gap: 1.5em; 
+        text-align: center; 
+    }
+
+    .img-box {
+        order: -1;
+        margin-top: 80px;
+    }
+
+    .img-box img {
+        width: 350px; 
+        height: auto; 
+        max-width: 100%; 
+        border-radius: 50%; 
+        margin-bottom: 5%;
+    }
+
+    .home-content h1 {
+        font-size: 36px; 
+    }
+
+    .home-content p {
+        font-size: 16px; 
+        margin-bottom: 0%;
+    }
+
+    .Personal-data {
+        flex-direction: column; 
+        align-items: center; 
+        padding: 50px 20px; 
+        gap: 1em; 
+    }
+
+    .Personal-content h2 {
+        font-size: 30px; 
+        text-align: center;
+    }
+
+    .Personal-img img {
+        width: 300px;
+        height: 250px;
+    }
+
+    .Personal-content {
+        max-width: 90%; 
+        text-align: center; 
+    }
+
+    .Personal-content p {
+        font-size: 16px;
+    }
+
+    .Education {
+        padding: 50px 8%;
+    }
+
+    .Education h2 {
+        font-size: 30px; 
+        margin: 30px auto 15px auto; 
+    }
+
+    .Educ-head {
+        font-size: 30px; 
+        margin: 30px 0 15px 0;
+    }
+
+    .educ-1, .educ-2, .educ-3 {
+        flex: 1 1 200px; 
+    }
+
+    .educ-1, .educ-2, .educ-3 {
+        margin: 0 10px;
+        width: 500px; 
+        height: 500px;
+        max-width: 100%;
+    }
+
+    .hobbies {
+        padding: 50px 8%;
+    }
+
+    .fav-movies, .fav-songs {
+        padding: 50px 8%;
+    }
+
+    .img-box img {
+        width: 300px; 
+        max-width: 500px; 
+        height: 250px; 
+    }
+
+    .movie, .song-container {
+        width: 90%;
+    }
+
+    .fav-songs h2{
+        font-size: 30px;
+        margin: 30px auto 15px auto;
+        text-align: center;
+    }
+
+    .song-container{
+        justify-content: center;
+    }
+    audio {
+        width: 100%;
+    }
+}

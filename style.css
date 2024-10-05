@@ -1,0 +1,402 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+section {
+    scroll-margin-top: 120px;
+}
+.menu {
+    display: none;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 35px 12%;
+    background: rgba(0, 0, 0, 0.747);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    transition: padding 0.3s ease, height 0.3s ease;
+   
+}
+
+.logo{
+    font-size: 25px;
+    color: white;
+    font-weight: 600;
+    transition: font-size 0.3s ease;
+}
+.logo:hover{
+    color:lightpink;
+    text-shadow: 0 0 25px lightpink,
+                 0 0 50px lightpink;
+    transform: scale(1.1);
+}
+
+span{
+    color: lightpink;
+}
+
+.navbar a{
+    font-size: 18px;
+    color: white;
+    font-weight: 500;
+    margin: 0 20px;
+    border-bottom: 3px solid transparent;
+    transition: font-size 0.3s ease;
+}
+
+.navbar a:hover,
+.navbar a.active{
+    color: hotpink;
+    border-bottom: 3px solid;
+}
+
+/* HOME SECTION */
+
+.home{
+    width: 100%;
+    min-height: 100vh;
+    background: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 7em;
+    padding: 50px 12% 50px;
+    padding-bottom: 0%; 
+    margin-bottom: 0%;
+}
+
+.img-box {
+    display: flex;
+    justify-content: center; 
+}
+
+.img-box img {
+    height: 450px;
+    width: 500px;
+    box-shadow: 0 0 25px lightpink,
+                0 0 50px lightpink;
+    border-radius: 50%;
+}
+.home-content{
+    max-width: 800px;
+}
+.home-content h3{
+    font-size: 42px;
+}
+
+.home-content h1{
+    font-size: 62px;
+    line-height: 1.2;
+}
+
+.home-content p{
+    color: lightpink;
+    font-style: italic;
+    font-weight: 500px;
+    font-size: 18px;
+    margin: 25px 0 30px;
+    padding-top: 30px;
+}
+
+::-webkit-scrollbar{
+    width: 15px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: lightpink;
+}
+
+::-webkit-scrollbar-track{
+    background-color: black;
+    width: 50px;
+}
+
+/* PERSONAL SECTION*/
+.Personal-data{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: 0px 75px; 
+    gap: 10em;
+    width: 100%;
+    object-fit: cover;
+    padding-bottom: 0%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+
+.Personal-img img{
+    height: 500px;
+    width: 550px;
+    position: relative;
+    box-shadow: 0 0 25px lightpink,
+                0 0 50px lightpink;
+    border-radius: 50%;
+}
+.Personal-content {
+    max-width: 600px; 
+}
+
+.Personal-content h2{
+    text-align: left;
+    color: white;
+    font-size: 42px;
+    letter-spacing: 3px;
+   
+}
+
+.Personal-content p{
+    font-size: 20px;
+    color: white;
+    padding-left: 50px;
+    padding-right: 50px;
+    justify-content: center;
+    margin: 2em 0 3em;
+    border-style: solid;
+    border-color: lightpink;
+    border-radius: 20px;
+    letter-spacing: 5px;
+    line-height: 3em;
+}
+
+/*EDUCATION SECTION*/
+
+.Education {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+}
+
+.Educ-head {
+    text-align: center;
+    font-size: 28px; 
+    color: white; 
+    margin: 40px 20px ;
+    margin-bottom: 80px; 
+    width: 100%; 
+}
+
+.educ-container {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: flex-start;
+    width: 100%; 
+    max-width: 1200px;
+    margin: 0 auto; 
+    flex-wrap: wrap;
+}
+
+.educ-1, .educ-2, .educ-3 {
+    padding: 1.5rem;
+    background: rgb(16, 16, 16);
+    color: white;
+    border-radius: 2rem;
+    border: rgb(53, 53, 53) 0.1rem solid;
+    border-color: lightpink;
+    text-align: left;
+    line-height: 2.5rem;
+    flex: 1 1 300px; 
+    margin: 5px; 
+}
+
+/*HOBBIES SECTION*/
+
+.hobbies {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background: black;
+    padding: 50px 70px 200px 50px;
+    gap: 2rem;
+    margin-right: 0;
+    text-align: left;
+}
+
+.hobbies h2 {
+    width: 100%;
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.book, .music, .movies, .cook {
+    flex: 0 0 23%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(53, 53, 53); 
+    color: lightpink;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.book-content, .music-content, .movies-content, .cook-content {
+    font-size: 3rem; 
+    color: hotpink; 
+}
+
+h4 {
+    letter-spacing: 3px;
+    line-height: 3em;
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+p{
+    color: white;
+}
+
+box-icon {
+    filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.5));
+}
+
+box-icon:hover {
+    filter: drop-shadow(0 0 15px lightpink); 
+    transform: scale(1.1); 
+    transition: 0.3s ease;
+}
+
+/*FAVORITE MOVIES SECTION*/
+.fav-movies {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    padding: 50px 70px 200px 50px;
+    gap: 3rem;
+}
+
+
+.fav-movies h2 {
+    color: white;
+    font-size: 36px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.movie {
+    display: flex;
+    align-items: center;
+    background-color: #333;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(255, 105, 180, 0.5);
+    width: 80%;
+    max-width: 1000px;
+    margin-bottom: 2rem;
+    justify-content: space-between;
+}
+
+.movie-num {
+    font-size: 36px;
+    font-weight: bold;
+    color: lightpink;
+    margin-right: 30px;
+}
+
+.movie-details {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.movie-vid {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+}
+
+.movie-title {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.movie-title p {
+    color: lightpink;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: left;
+    margin-left: 20px;
+}
+
+.movie-vid iframe {
+    border-radius: 15px;
+    box-shadow: 0 0 25px lightpink, 0 0 50px rgba(255, 105, 180, 0.5);
+    border: none;
+}
+
+.movie:hover {
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+}
+
+/*FAVORITE SONGS SECTION*/
+
+.fav-songs {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    background-color: black; 
+    color: white; 
+    padding: 50px 70px 100px 70px; 
+}
+
+.fav-songs h2{
+    font-size: 36px;
+    margin-bottom: 80px;
+    align-items: center;
+}
+
+.song-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    grid-gap: 1.5rem; 
+    width: 100%;
+    max-width: 1200px; 
+}
+
+.song-1, .song-2, .song-3, .song-4, .song-5, .song-6{
+    background-color: #333;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(255, 105, 180, 0.5);
+    text-align: center;
+    width: 100%; 
+}
+
+.song-title {
+    color: lightpink;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+}
+
+.song-1:hover, .song-2:hover, .song-3:hover, .song-4:hover, .song-5:hover, .song-6:hover{
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+    box-shadow: 0 0 15px rgba(255, 105, 180, 0.8);
+}
